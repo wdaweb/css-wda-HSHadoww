@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        hr {
+            margin-top: 2rem;
+        }
+
+        #wda,
+        #html,
+        #css,
+        #bs,
+        #js,
+        #jq,
+        #sass,
+        #vue {
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .htti {
+            text-align: center;
+            width: 100%;
+        }
+
+        .h {
+            width: 90%;
+            margin: 5px;
+            margin-left: 5vw;
+            text-align: left;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        .p {
+            width: 90%;
+            font-weight: 400;
+        }
+
+        img {
+            width: 50%;
+        }
+
+
+        @media (min-width:576px) {
+            body {
+                display: flex;
+                height: 100vh;
+                width: 100vw;
+                overflow: hidden;
+            }
+
+            p,
+            hr {
+                display: none;
+            }
+
+            #wda {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                margin: 0;
+            }
+
+            #wda img {
+                width: 15%;
+            }
+
+            #wda h1 {
+                margin: 5px;
+            }
+
+            #wda h2 {
+                margin-top: 10px;
+                margin: 5px;
+            }
+
+            #wda p {
+                display: block;
+            }
+
+            .im {
+                width: 9%;
+            }
+
+            #html {
+                position: absolute;
+                top: 5%;
+                left: -40%;
+            }
+
+            #html h1 {
+                position: relative;
+                left: calc(43% - 5px);
+            }
+
+            #html::after {
+                position: absolute;
+                content: "";
+                width: 28vw;
+                border: 1px solid #999;
+                transform: rotate(15deg);
+                top: 105%;
+                right: 18%;
+            }
+
+            #css {
+                position: absolute;
+                top: 0;
+                left: -15%;
+            }
+
+            #css h1 {
+                position: relative;
+                left: calc(42% + 9px);
+            }
+
+            #css::after {
+                position: absolute;
+                content: "";
+                width: 8%;
+                border: 1px solid #999;
+                transform: rotate(48deg);
+                top: 90%;
+                right: calc(37vw + 20px);
+            }
+
+            #bs {
+                position: absolute;
+                top: 0;
+                left: 22%;
+            }
+
+            #bs h1 {
+                position: relative;
+                left: calc(41%);
+            }
+
+            #bs::after {
+                position: absolute;
+                content: "";
+                width: 12%;
+                border: 1px solid #999;
+                transform: rotate(145deg);
+                top: 120%;
+                right: 55%;
+            }
+
+            #js {
+                position: absolute;
+                bottom: 30%;
+                left: -36%;
+            }
+
+            #js h1 {
+                position: relative;
+                left: 41%;
+            }
+
+            #js::after {
+                content: "";
+                position: absolute;
+                width: 21vw;
+                border: 1px solid #999;
+                transform: rotate(-10deg);
+                top: 35%;
+                right: 21.5%
+            }
+
+            #jq {
+                position: absolute;
+                bottom: 5%;
+                left: -20%;
+            }
+
+            #jq h1 {
+                position: relative;
+                left: 42%;
+            }
+
+            #jq::after {
+                content: "";
+                position: absolute;
+                width: 12vw;
+                border: 1px solid #999;
+                transform: rotate(-45deg);
+
+                top: -20%;
+                right: 35%;
+            }
+
+            #sass {
+                position: absolute;
+                top: 30%;
+                left: 40%;
+            }
+
+            #sass h1 {
+                position: relative;
+                left: calc(43%);
+            }
+
+            #sass::after {
+                content: "";
+                position: absolute;
+                width: 26vw;
+                border: 1px solid #999;
+                transform: rotate(-4deg);
+                top: 55%;
+                left: 19%;
+            }
+
+            #vue {
+                position: absolute;
+                bottom: 18%;
+                left: 28%;
+            }
+
+            #vue h1 {
+                position: relative;
+                left: calc(42% + 7px);
+            }
+
+            #vue::after {
+                content: "";
+                width: 15%;
+                border: 1px solid #999;
+                transform: rotate(25deg);
+                position: absolute;
+                top: -20%;
+                left: calc(27vw + 30px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wda">
+        <img src="./images/wda.png" alt="">
+        <h1 class="wdainfo">泰山職訓局</h1>
+        <h2 class="wdainfo">從零開始的網頁設計課程</h2>
+        <p class="wdainfo"> 轉職網頁開發人員 掌握就業必備職能 </p>
+        <P class="wdainfo"> 由淺入深學習技術 強化職場的競爭力 </P>
+    </div>
+
+    <hr>
+
+    <div id="html">
+
+        <div class="htti">
+            <img class="im" src="./images/html.png" alt="">
+            <h1 class="h">HTML</h1>
+        </div>
+        <p class="p">
+            超文本標記語言（英語：HyperText Markup
+            Language，簡稱：HTML）是一種用於建立網頁的標準標記語言。HTML是一種基礎技術，常與CSS、JavaScript一起被眾多網站用於設計網頁、網頁應用程式以及行動應用程式的使用者介面[3]。網頁瀏覽器可以讀取HTML檔案，並將其彩現成視覺化網頁。HTML描述了一個網站的結構語意隨著線索的呈現，使之成為一種標記語言而非程式語言。
+        </p>
+    </div>
+
+    <hr>
+
+    <div id="css">
+
+        <div class="htti">
+            <img class="im" src="./images/css.png">
+            <h1 class="h"> CSS3 </h1>
+        </div>
+        <p class="p">
+            階層式樣式表（英語：Cascading Style
+            Sheets，縮寫：CSS；又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣式表）是一種用來為結構化文件（如HTML文件或XML應用）添加樣式（字型、間距和顏色等）的電腦語言，由W3C定義和維護。CSS3現在已被大部分現代瀏覽器支援，而下一版的CSS4仍在開發中。
+        </p>
+    </div>
+
+    <hr>
+
+    <div id="bs">
+        <div class="htti">
+            <img class="im" src="./images/bs.png">
+            <h1 class="h"> Bootstrap </h1>
+        </div>
+        <p class="p">
+            Bootstrap是一組用於網站和網路應用程式開發的開源前端（所謂「前端」，指的是展現給終端使用者的介面。與之對應的「後端」是在伺服器上面執行的代碼）框架，包括HTML、CSS及JavaScript的框架，提供字體排印、表單、按鈕、導航及其他各種元件及Javascript擴充套件，旨在使動態網頁和Web應用的開發更加容易。
+        </p>
+    </div>
+
+    <hr>
+    <div id="js">
+        <div class="htti">
+            <img class="im" src="./images/js.png">
+            <h1 class="h"> JavaScript </h1>
+        </div>
+        <p class="p">
+            JavaScript（通常縮寫為JS）是一門基於原型和頭等函數的多範式進階直譯程式語言，它支援物件導向程式設計、指令式編程和函數式程式設計。它提供方法來操控文字、陣列、日期以及正規表示式等。不支援I/O，比如網路、儲存和圖形等，但這些都可以由它的宿主環境提供支援。它由Ecma透過ECMAScript實作語言的標準化。目前，它被世界上的絕大多數網站所使用，也被世界主流瀏覽器（Chrome、IE、Firefox、Safari和Opera）所支援。
+        </p>
+    </div>
+
+    <hr>
+
+    <div id="jq">
+        <div class="htti">
+            <img class="im" src="./images/jq.png">
+            <h1 class="h"> jQuery </h1>
+        </div>
+        <p class="p">
+            jQuery是一套跨瀏覽器的JavaScript函式庫，用於簡化HTML與JavaScript之間的操作。約翰·雷西格（John Resig）在2006年1月的BarCamp NYC上釋出了第一個版本。目前由Dave
+            Methvin領導的團隊進行開發。全球前10,000個訪問最高的網站中，有65%使用了jQuery，是曾經最受歡迎的JavaScript函式庫。 </p>
+    </div>
+
+    <hr>
+
+    <div id="sass">
+        <div class="htti">
+            <img class="im" src="./images/sass.png">
+            <h1 class="h"> Sass </h1>
+        </div>
+        <p class="p">
+            Sass（英文全稱：Syntactically Awesome Stylesheets）是一個最初由Hampton Catlin設計並由Natalie
+            Weizenbaum開發的層疊樣式表語言。[3][4]在開發最初版本之後，Weizenbaum和Chris
+            Eppstein繼續通過SassScript來繼續擴充Sass的功能。SassScript是一個在Sass檔案中使用的小型手稿語言。
+        </p>
+    </div>
+
+    <hr>
+
+    <div id="vue">
+        <div class="htti">
+            <img class="im" src="./images/vue.png">
+            <h1 class="h"> Vue.js </h1>
+        </div>
+        <p class="p">
+            ue.js（/vjuː/，簡稱Vue）是一個用於建立使用者介面的開源MVVM前端JavaScript框架，也是一個建立單頁應用的Web應用框架。Vue.js由尤雨溪建立，由他和其他活躍的核心團隊成員維護。
+        </p>
+    </div>
+</body>
+
+</html>
